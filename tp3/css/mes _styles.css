@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.form {
+    border-style: dashed;
+    border-color: firebrick;
+    border-width: thin;
+    padding: 5px;
+    margin-bottom:
+
+}
+
+.flexcontact {
+    height: 1000px;
+    width: 49%;
+    border-style: none;
+
+}
+
+
+
+.form div {
+
+    display: block;
+
+}
+
+fieldset {
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: grey;
+    border-radius: 15px;
+}
+
+.legend {
+
+    color: crimson;
+}
+
+
+
+video {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+
+
+
+
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:640px) {
+
+    /*petit écran*/
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    footer div:first-child, footer div:last-child{
+        display:none;
+    }
+        
+    
+}
+
+@media screen and (min-width:640px) {
+
+    /*grand écran*/
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .flex-container > aside {
+    height: 1000px;
+    width: 48%;
+    padding-left: 10px;
+}
+    .flex-container > section {
+
+    height: 1000px;
+    width: 48%;
+    border-right-style: solid;
+    border-right-color: black;
+    }
+
+
+}
